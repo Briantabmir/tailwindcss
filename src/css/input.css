@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+    /* Estilos base para toda la página */
+    body {
+        font-family: 'Arial', sans-serif;
+    }
+}
+
+@layer components {
+
+    /* Personalización de componentes */
+    .btn-primary {
+        @apply bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600;
+    }
+
+    .card {
+        @apply bg-white p-4 border border-gray-200 rounded shadow;
+    }
+}
+
+@layer utilities {
+
+    /* Clases de utilidad personalizadas */
+    .bg-main-color {
+        background-color: #3498db;
+    }
+
+    .text-main-color {
+        color: #3498db;
+    }
+}
